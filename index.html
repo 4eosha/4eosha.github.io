@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meatec</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+<body>
+    <div class="container">
+
+<!-- ХЭДЕР -->
+
+        <div class="header">
+            <div class="header__logo"><img src="/img/meatec logo 1.png" alt=""></div>
+            <nav class="header__nav">
+                <ul class="menu" id="menu">
+                    <li><a href="#slider">Слайдер</a></li>
+                    <li><a href="#filter">Фильтр</a></li>
+                    <li><a href="#tab">Табы</a></li>
+                    <li><a href="#accordion">Аккордеоны</a></li>
+                </ul>
+                <div class="hamb-filed" id="hamb">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+            <button class="header__button pointer">Заказать звонок</button>
+        </div>
+        <div class="pop-up" id="pop-up"></div>
+
+<!-- СЛАЙДЕР -->
+
+        <section class="slider" id="slider">
+            <div class="slider__window">
+                <div class="slider__item">
+                    <div class="slider__text-block">
+                        <div class="slider__h1">Абразивные проволочно-вырезные станки</div>
+                        <div class="slider__text">Высокоточная обработка нетокопроводящих материалов любой твердости</div>
+                    </div>
+                    <div class="slider__img"><img src="/img/slider-img-1.png" alt=""></div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__text-block">
+                        <div class="slider__h1">Модернизация/диагностика/ремонт</div>
+                        <div class="slider__text">электроэрозионных проволочно-вырезных станков струйного или погружного типа использующих шаговые или серво двигатели для осей X/Y/U/V</div>
+                    </div>
+                    <div class="slider__img"><img src="/img/slider-img-2.png" alt=""></div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__text-block">
+                        <div class="slider__h1">На складе в Москве</div>
+                        <div class="slider__text">электроэрозионные проволочно-вырезные многопроходные станки струйного типа с шаговыми двигателями</div>
+                    </div>
+                    <div class="slider__img"><img src="/img/slider-img-3.png" alt=""></div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__text-block">
+                        <div class="slider__h1">Сервопривода на станках серии МС</div>
+                        <div class="slider__text">На оси Х и Y установлены сервопривода и оптические линейные энкодеры, которые повышают точность перемещений и улучшают удобство настройки</div>
+                    </div>
+                    <div class="slider__img"><img src="/img/slider-img-4.png" alt=""></div>
+                </div>
+                <div class="prev pointer slider__arrow"><img src="/img/arrow-left.png" alt=""></div>
+                <div class="next pointer slider__arrow"><img src="/img/arrow-right.png" alt=""></div>
+            </div>
+            <div class="slider__dots">
+                <div class="dot pointer active_d"></div>
+                <div class="dot pointer"></div>
+                <div class="dot pointer"></div>
+                <div class="dot pointer"></div>
+            </div>
+        </section>
+
+<!-- ФИЛЬТР -->
+
+        <section class="filter" id="filter">
+            <div class="filter__buttons">
+                <button data-id="all" class="filter__button pointer active_f">Все станки</button>
+                <button data-id="pvs" class="filter__button pointer">Проволочно-вырезные станки</button>
+                <button data-id="kps" class="filter__button pointer">Копировально-прошивные станки</button>
+                <button data-id="sss" class="filter__button pointer">Сверильные станки “Супердрели”</button>
+            </div>
+            <div class="grid">
+                <div class="grid__item pvs">
+                    <div class="grid__frame"><img src="/img/grid-item1.jpg" alt=""></div>
+                    <div class="grid__text">Проволочно-вырезные станки многопроходные струйного типа с шаговыми двигателями. Серия ДК77, производство НПП «МЕАТЭК»</div>
+                </div>
+                <div class="grid__item pvs">
+                    <div class="grid__frame"><img src="/img/grid-item2.jpg" alt=""></div>
+                    <div class="grid__text">Проволочно-вырезные станки многопроходные струйного типа с шаговыми двигателями. Серия М, производство НПП «МЕАТЭК»</div>
+                </div>
+                <div class="grid__item pvs">
+                    <div class="grid__frame"><img src="/img/grid-item3.jpg" alt=""></div>
+                    <div class="grid__text">Проволочно-вырезные станки струйного типа с серводвигателями. Серия МС, производство НПП «МЕАТЭК»</div>
+                </div>
+                <div class="grid__item pvs">
+                    <div class="grid__frame"><img src="/img/grid-item4.jpg" alt=""></div>
+                    <div class="grid__text">Проволочные-вырезные станки погружного типа серводвигателями Серия CW, ARISTECH</div>
+                </div>
+                <div class="grid__item kps">
+                    <div class="grid__frame"><img src="/img/grid-item5.jpg" alt=""></div>
+                    <div class="grid__text">1-осевые копировально-прошивные станки с числовым управлением со встроенным генератором тока. Серия ZNC Y, BOHONG</div>
+                </div>
+                <div class="grid__item kps">
+                    <div class="grid__frame"><img src="/img/grid-item6.jpg" alt=""></div>
+                    <div class="grid__text">1-осевые копировально-прошивные станки с ЧПУ с выносным генератором тока. Серия ZNC, BOHONG</div>
+                </div>
+                <div class="grid__item kps">
+                    <div class="grid__frame"><img src="/img/grid-item7.jpg" alt=""></div>
+                    <div class="grid__text">Компактный копировально-прошивной станок с ЧПУ. Серия LS-150, ARISTECH</div>
+                </div>
+                <div class="grid__item kps">
+                    <div class="grid__frame"><img src="/img/grid-item8.jpg" alt=""></div>
+                    <div class="grid__text">Копировально-прошивные станки 1-осевые с ЧПУ, с функцией «автотехнолог» Серия LS ZNC, ARISTECH</div>
+                </div>
+                <div class="grid__item sss">
+                    <div class="grid__frame"><img src="/img/grid-item9.jpg" alt=""></div>
+                    <div class="grid__text">Экстрактор электроэрозионный портативный ЭРП 01</div>
+                </div>
+                <div class="grid__item sss">
+                    <div class="grid__frame"><img src="/img/grid-item10.jpg" alt=""></div>
+                    <div class="grid__text">1-координатные высокоскоростные станки «Супердрель» Серия BH4030/5040</div>
+                </div>
+                <div class="grid__item sss">
+                    <div class="grid__frame"><img src="/img/grid-item11.jpg" alt=""></div>
+                    <div class="grid__text">Электроэрозионный станок для сверления микроотверстий. Серия MD20, CASTEK</div>
+                </div>
+                <div class="grid__item sss">
+                    <div class="grid__frame"><img src="/img/grid-item12.jpg" alt=""></div>
+                    <div class="grid__text">3-координатный электроэрозионный станок «Супердрель» CNC4030/5040</div>
+                </div>
+            </div>
+        </section>
+
+<!-- ТАБЫ -->
+
+        <section class="tab" id="tab">
+            <div class="tab__header">
+                <div class="tab__tab pointer active_t">География поставки</div>
+                <div class="tab__tab pointer">Акции</div>
+                <div class="tab__tab pointer">Контакты и соцсети</div>
+            </div>
+            <div class="tab__tab-content map">
+                <img src="/img/map.png" alt="">
+            </div>
+            <div class="tab__tab-content">
+                <div class="grid2">
+                    <div class="grid2__item">
+                        <div class="grid2__frame"><img src="/img/grid2-item1.jpg" alt=""></div>
+                        <div class="grid2__discount">-15%</div>
+                        <div class="grid2__text">Проволока молибденовая арт. 2236</div>
+                    </div>
+                    <div class="grid2__item">
+                        <div class="grid2__frame"><img src="/img/grid2-item2.jpg" alt=""></div>
+                        <div class="grid2__discount">-15%</div>
+                        <div class="grid2__text">Фильтры EDM-19 для электроэрозионных станков</div>
+                    </div>
+                    <div class="grid2__item">
+                        <div class="grid2__frame"><img src="/img/grid2-item3.jpg" alt=""></div>
+                        <div class="grid2__discount">-10%</div>
+                        <div class="grid2__text">Распродажа оснастки для фрезерных станков со склада в Москве</div>
+                    </div>
+                    <div class="grid2__item">
+                        <div class="grid2__frame"><img src="/img/grid2-item4.jpg" alt=""></div>
+                        <div class="grid2__discount">-15%</div>
+                        <div class="grid2__text">Наборы прижимов Vertex CK-12A</div>
+                    </div>
+                    <div class="grid2__item">
+                        <div class="grid2__frame"><img src="/img/grid2-item5.jpg" alt=""></div>
+                        <div class="grid2__discount">-50%</div>
+                        <div class="grid2__text">Стол поворотный наклонный Vertex VUT-300</div>
+                    </div>
+                    <div class="grid2__item">
+                        <div class="grid2__frame"><img src="/img/grid2-item6.jpg" alt=""></div>
+                        <div class="grid2__discount">-15%</div>
+                        <div class="grid2__text">Универсальные упоры Vertex VWS</div>
+                    </div>
+                    <div class="grid2__item">
+                        <div class="grid2__frame"><img src="/img/grid2-item7.jpg" alt=""></div>
+                        <div class="grid2__discount">-20%</div>
+                        <div class="grid2__text">Поворотные столы Vertex CS-6</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab__tab-content tab3">
+                <div class="contact">
+                    <div class="contact__block1">
+                        <div>8 800 350-12-23</div>
+                        <div>info@meatec.ru</div>
+                        <div class="timetable">пн-пт с 9-00 до 18-00</div>
+                    </div>
+                    <div class="contact__block2">
+                        <div><span>+7 495 626-99-26</span> Москва</div>
+                        <div><span>+7 963 303-22-29</span> Санкт-Петербург</div>
+                        <div><span>+7 8332 21-21-04</span> Киров</div>
+                        <button class="contact__button pointer">Заказать звонок</button>
+                    </div>
+                    <div class="contact__block3">
+                        <div>Каналы в соцсетях</div>
+                        <div class="socials">
+                            <img src="/img/icon-vk.png" alt="">
+                            <img src="/img/icon-tg.png" alt="">
+                            <img src="/img/icon-yt.png" alt="">
+                            <img src="/img/icon-fb.png" alt="">
+                            <img src="/img/icon-in.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="worker"><img src="/img/worker.jpg" alt=""></div>
+            </div>
+        </section>
+
+<!-- АККОРДИОН -->
+
+        <section class="accordion" id="accordion">
+            <div class="accordion__h1">Преимущества работы с нашей компанией</div>
+            <div class="accordion__block">
+                <div class="accordion__icon"><img src="/img/accordion-icon1.png" alt=""></div>
+                <div class="accordion__text-block">
+                    <div class="accordion__h2 pointer">ОПЫТ</div>
+                    <div class="accordion__text">17 летний опыт работы на рынке металлообрабатывающего оборудования во всех регионах России, а также Казахстане и Белоруссии. Наша компания честно заслужила доверие и уважение своих клиентов за серьезное отношение к взятым на себя обязательствам, строгую финансовую дисциплину и слаженную работу коллектива.</div>
+                </div>
+            </div>
+            <div class="accordion__block">
+                <div class="accordion__icon"><img src="/img/accordion-icon2.png" alt=""></div>
+                <div class="accordion__text-block">
+                    <div class="accordion__h2 pointer">ГАРАНТИИ</div>
+                    <div class="accordion__text">Предоставляем гарантии на оборудование от 1 до 2 лет. Вся продукция выполнена в соответствии с международными стандартами и имеет гарантию качества. Наши услуги соответствует международному сертификату системы менеджмента качества по стандарту ISO 9001:2008 (ГОСТ ISO 9001-2011).На нашем сайте вы можете просмотреть все необходимые сертификаты, свидетельства и декларации, подтверждающие право представлять интересы заводов производителей металлообрабатывающего оборудования крупнейших мировых брендов Lilian, YIDA, Aristech.</div>
+                </div>
+            </div>
+            <div class="accordion__block">
+                <div class="accordion__icon"><img src="/img/accordion-icon3.png" alt=""></div>
+                <div class="accordion__text-block">
+                    <div class="accordion__h2 pointer">ПРЯМЫЕ ПОСТАВКИ</div>
+                    <div class="accordion__text">Прямые поставки от производителей металлообрабатывающего оборудования, запасных частей, расходных материалов и оснастки. Товары выполняются производителем строго по всем международным стандартам и проверяются на всех этапах производственного процесса, что обеспечивает высокое качество каждой единицы продукции.</div>
+                </div>
+            </div>
+            <div class="accordion__block">
+                <div class="accordion__icon"><img src="/img/accordion-icon4.png" alt=""></div>
+                <div class="accordion__text-block">
+                    <div class="accordion__h2 pointer">ОТВЕТСТВЕННАЯ ДОСТАВКА</div>
+                    <div class="accordion__text">Доставка строго в оговоренные сроки. Наша компания заинтересована в успешности вашего производства, поэтому мы стремимся к долгосрочному сотрудничеству, обеспечивая клиентов продукцией в кратчайшие сроки в удобное для них время.</div>
+                </div>
+            </div>
+            <div class="accordion__block">
+                <div class="accordion__icon"><img src="/img/accordion-icon5.png" alt=""></div>
+                <div class="accordion__text-block">
+                    <div class="accordion__h2 pointer">БЕЗ ПОСРЕДНИКОВ</div>
+                    <div class="accordion__text">Собственное производство электроэрозионных станков позволяет нам предлагать качественный товар по выгодной стоимости, без наценок посредников.</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+<!-- МОДАЛЬНОЕ ОКНО -->
+
+    <div class="cookies" id="cookies">
+        <div>
+            Пользуясь этим сайтом, вы соглашаетесь с тем, что
+            <a class="cookies__link" href="#">мы используем cookie-файлы</a>
+        </div>
+        <div class="cookies__button pointer" id="cookies__button">Хорошо</div>
+    </div>
+
+<!-- ФУТЕР -->
+
+    <div class="footer">
+        <div class="container footer__main">
+            <div class="footer__logo"><img src="/img/logo.svg.png" alt=""></div>
+            <div class="footer__main-block">
+                <div class="footer__block">
+                    <div class="footer__category">ОСНОВНОЕ</div>
+                    <div class="footer__text"><a href="#slider">Предложения</a></div>
+                    <div class="footer__text"><a href="#filter">Станки</a></div>
+                    <div class="footer__text"><a href="#accordion">Преимущества</a></div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__category">ФИЛЬТР</div>
+                    <div class="footer__text"><a href="">Все станки</a></div>
+                    <div class="footer__text"><a href="">Проволочно-вырезные станки</a></div>
+                    <div class="footer__text"><a href="">Копировально-прошивные станки</a></div>
+                    <div class="footer__text"><a href="">Сверильные станки “Супердрели”</a></div>
+                </div>
+            </div>
+            <div class="footer__main-block">
+                <div class="footer__block">
+                    <div class="footer__category">ТАБЫ</div>
+                    <div class="footer__text"><a href="">География поставок</a></div>
+                    <div class="footer__text"><a href="">Акции</a></div>
+                    <div class="footer__text"><a href="">Контакты и соцсети</a></div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__category">КОНТАКТЫ</div>
+                    <div class="footer__text">8 800 350 1223</div>
+                    <div class="footer__text">info@meatec.ru</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/slider.js"></script>
+    <script src="/js/filter.js"></script>
+    <script src="/js/tabs.js"></script>
+    <script src="/js/accordion.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="/js/menu.js"></script>
+</body>
+</html>
